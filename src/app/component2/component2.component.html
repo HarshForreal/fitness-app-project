@@ -1,0 +1,117 @@
+<!-- app.component.html -->
+
+<!-- <nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#">Fitness App</a>
+    <button
+      class="navbar-toggler"
+      type="button"
+      data-bs-toggle="collapse"
+      data-bs-target="#navbarNav"
+      aria-controls="navbarNav"
+      aria-expanded="false"
+      aria-label="Toggle navigation"
+    >
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div
+      class="collapse navbar-collapse justify-content-end pe-5"
+      id="navbarNav"
+    >
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link" [routerLink]="['/component1']">Weight Loss</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" [routerLink]="['/component2']">Weight Gain</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" [routerLink]="['/component3']"
+            >Weight Maintenance</a
+          >
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" [routerLink]="['/component4']">BMI Report</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav> -->
+<nav class="navbar navbar-expand-lg">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#">Fitness App</a>
+    <button
+      class="navbar-toggler"
+      type="button"
+      data-bs-toggle="collapse"
+      data-bs-target="#navbarNav"
+      aria-controls="navbarNav"
+      aria-expanded="false"
+      aria-label="Toggle navigation"
+    >
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div
+      class="collapse navbar-collapse justify-content-end pe-5"
+      id="navbarNav"
+    >
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link" [routerLink]="['/component1']">Weight Loss</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" [routerLink]="['/component2']">Weight Gain</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" [routerLink]="['/component3']"
+            >Weight Maintenance</a
+          >
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" [routerLink]="['/component4']">BMI Report</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+<router-outlet></router-outlet>
+
+<h2 class="mt-5 weight-gain">Weight Gain</h2>
+<div class="container main-content">
+  <div class="row">
+    <div class="col-md-6">
+      <h3>Exercise Plans</h3>
+      <p>Here are some exercises that can help you with weight gain:</p>
+      <ul>
+        <li>Compound exercises like squats, deadlifts, or bench press</li>
+        <li>
+          Isolation exercises like bicep curls, tricep extensions, or leg curls
+        </li>
+        <li>Functional exercises like pull-ups, push-ups, or lunges</li>
+        <li>Note: rest is also very important</li>
+        <a
+          href="https://www.healthline.com/health/exercise-to-gain-weight"
+          class="refer-link"
+          >Healthline</a
+        >
+      </ul>
+    </div>
+    <div class="col-md-6">
+      <h3>Diet Plans</h3>
+      <p>Here are some diet plans that can help you with weight gain:</p>
+      <ul>
+        <li>High-calorie diets like the GOMAD (Gallon of Milk a Day) diet</li>
+        <li>High-protein diets like the Dukan diet or the South Beach diet</li>
+        <li>
+          Healthy weight gain diets with a balance of macronutrients like the
+          Mediterranean diet
+        </li>
+        <a
+          href="https://www.healthifyme.com/blog/healthy-diet-plan-for-weight-gain/"
+          class="refer-link"
+          >Healthifyme</a
+        >
+      </ul>
+    </div>
+  </div>
+</div>

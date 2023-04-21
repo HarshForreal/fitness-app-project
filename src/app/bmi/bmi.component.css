@@ -1,0 +1,119 @@
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans&family=Open+Sans:wght@300&family=Poppins:wght@100;200;400&family=Roboto:wght@300&family=Sofia+Sans&family=Source+Code+Pro:wght@300&family=Space+Mono:wght@400;700&display=swap");
+* {
+  font-family: "Sofia Sans", sans-serif;
+}
+.navbar-brand {
+  color: #ceff00;
+}
+nav {
+  background-color: black;
+}
+
+.navbar {
+  color: white;
+}
+.navbar .navbar-nav .nav-link {
+  color: white;
+}
+
+ul {
+  font-size: 18px;
+  color: white;
+}
+
+li {
+  font-size: 18px;
+}
+
+a {
+  display: inline-block;
+  position: relative;
+}
+
+a::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: #ceff00;
+  transform-origin: bottom right;
+  transition: transform 0.25s ease-out;
+}
+
+a:hover::after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+
+.bmi-calculator {
+  margin-right: 40rem;
+  margin-left: 40rem;
+  display: inline-block;
+  border-radius: 50px;
+  padding: 20px;
+  background-color: black;
+  color: #f535aa;
+  font-size: 20px;
+  font-weight: bold;
+  display: flex;
+  justify-content: center;
+}
+
+.card-style {
+  background-color: black;
+  border: 5px solid black;
+  border-radius: 10px;
+  margin-left: 20rem;
+  margin-right: 20rem;
+  margin-top: 5rem;
+  margin-bottom: 5rem;
+  padding: 20px;
+}
+button {
+  background-color: black;
+  color: #f535aa;
+  transition: 0.5s;
+  width: 10rem;
+  border-radius: 50px;
+}
+button:hover {
+  background-color: #ceff00;
+  color: #f535aa;
+  /* border-radius: 20px; */
+}
+
+.result {
+  display: flex;
+  justify-content: center;
+}
+
+.button-wrapper {
+  display: flex;
+  justify-content: center;
+  margin-top: 5rem;
+}
+.form-wrapper {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+.label-weight {
+  margin-top: 2rem;
+  font-weight: bold;
+}
+.label-height {
+  margin-top: 2rem;
+  font-weight: bold;
+}
+
+.bmi {
+  display: flex;
+  margin-top: 3rem;
+  margin-left: 4rem;
+  font-weight: bold;
+  font-size: 30px;
+}

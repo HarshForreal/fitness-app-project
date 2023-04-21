@@ -1,0 +1,87 @@
+<!-- app.component.html -->
+
+<nav class="navbar navbar-expand-lg">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#">Fitness App</a>
+    <button
+      class="navbar-toggler"
+      type="button"
+      data-bs-toggle="collapse"
+      data-bs-target="#navbarNav"
+      aria-controls="navbarNav"
+      aria-expanded="false"
+      aria-label="Toggle navigation"
+    >
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div
+      class="collapse navbar-collapse justify-content-end pe-5"
+      id="navbarNav"
+    >
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link" [routerLink]="['/component1']">Weight Loss</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" [routerLink]="['/component2']">Weight Gain</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" [routerLink]="['/component3']"
+            >Weight Maintenance</a
+          >
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" [routerLink]="['/component4']">BMI Report</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<router-outlet></router-outlet>
+
+<h2 class="mt-5 weight-maintain">Weight Maintain</h2>
+<div class="container main-content">
+  <div class="row">
+    <div class="col-md-6">
+      <h3>Exercise Plans</h3>
+      <p>Here are some exercises that can help you with weight maintenance:</p>
+      <ul>
+        <li>Low-impact exercises like walking, yoga, or Pilates</li>
+        <li>Moderate-intensity exercises like jogging, cycling, or swimming</li>
+        <li>
+          Resistance training exercises like weight lifting or resistance band
+          workouts
+        </li>
+        <a
+          href="https://www.healthifyme.com/blog/healthy-diet-plan-for-weight-gain/"
+          class="refer-link"
+          >Healthifyme</a
+        >
+      </ul>
+    </div>
+    <div class="col-md-6">
+      <h3>Diet Plans</h3>
+      <p>Here are some diet plans that can help you with weight maintenance:</p>
+      <ul>
+        <li>
+          Balanced diets that include a variety of healthy foods like fruits,
+          vegetables, whole grains, lean proteins, and healthy fats
+        </li>
+        <li>
+          Mediterranean diet, which emphasizes plant-based foods, healthy fats,
+          and moderate amounts of lean protein
+        </li>
+        <li>
+          DASH (Dietary Approaches to Stop Hypertension) diet, which focuses on
+          fruits, vegetables, whole grains, and low-fat dairy
+        </li>
+        <a
+          href="https://www.healthifyme.com/blog/healthy-diet-plan-for-weight-gain/"
+          class="refer-link"
+          >Healthifyme</a
+        >
+      </ul>
+    </div>
+  </div>
+</div>
